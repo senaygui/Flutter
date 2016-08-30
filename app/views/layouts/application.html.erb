@@ -10,7 +10,14 @@
 
   <body>
   <%= render '/layouts/new'%>
-  <div class = "container"><%= yield %></div>
+
+  <div class = "container">
+
+    <span class="notice"><%= notice %></span>
+    <span class="alert"><%= alert %></span>
+    <%= yield %>
+    
+  </div>
   
     
   </body>
